@@ -4,7 +4,7 @@
 
 Name:		i3lock-color
 Version:	2.git%{shortcommit}
-Release:	1
+Release:	2
 Source0:	https://github.com/Raymo111/i3lock-color/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
 Summary:	The world's most popular non-default computer lockscreen.
 URL:		https://github.com/Raymo111/i3lock-color
@@ -24,6 +24,8 @@ BuildRequires:  libev-devel
 BuildRequires:  pam-devel
 
 Conflicts: i3lock
+
+Recommends: imagemagick
 
 %description
 A modern version of i3lock with color functionality and other features.
